@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { PatientEntryComponent } from './patient-entry/patient-entry.component';
 import { PatientSearchComponent } from './patient-search/patient-search.component';
 import { PatientDeleteComponent } from './patient-delete/patient-delete.component';
-import { Router, Routes } from '@angular/router';
+import { Router, RouterModule, Routes } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
 import { PatientViewComponent } from './patient-view/patient-view.component';
 
@@ -39,7 +39,8 @@ const myRoute:Routes=[
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
