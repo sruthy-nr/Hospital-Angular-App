@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./patient-search.component.css']
 })
 export class PatientSearchComponent {
-
+  pid=""
+ 
+  search=()=>{
+    let data:any={
+      "pid":this.pid
+      }
+    console.log(data)
+  }
 }
